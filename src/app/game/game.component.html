@@ -1,0 +1,11 @@
+<div class="game-field">
+
+    <div class="card-stack">
+    
+    <img [ngStyle]="{'right.px' : i * 4}" *ngFor="let c of [0,1,2,3,5]; let i = index;" 
+    src="assets/img/cards/card_cover.png">
+    <img (click)="pickCard()" class="top-card" style="right: 25px" src="assets/img/cards/card_cover.png">
+    <img (click)="pickCard()" *ngIf="pickCardAnimation" [class.pick-card]="pickCardAnimation" class="pick-card" style="right: 25px" src="assets/img/cards/clubs_1.png">
+</div>
+
+</div>
