@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { __importDefault } from 'tslib';
+import { Component, OnInit, Input } from '@angular/core';
+
 
 @Component({
   selector: 'app-player',
@@ -8,7 +8,7 @@ import { __importDefault } from 'tslib';
 })
 export class PlayerComponent implements OnInit {
 
-  @Input() name;
+  @Input() name:any;
 
   constructor() { }
 
