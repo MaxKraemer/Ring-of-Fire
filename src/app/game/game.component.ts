@@ -39,7 +39,8 @@ export class GameComponent implements OnInit {
       console.log(this.currentCard);
       this.currentCard = this.game.stack.pop(); // show with a click a diffrent card
      
-      
+      this.game.currentPlayer++;
+      this.game.currentPlayer = this.game.currentPlayer % this.game.players.length; // show a diffrent player 
       setTimeout(() => {
       
         this.game.playedCards.push(this.currentCard);
