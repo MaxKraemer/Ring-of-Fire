@@ -1,6 +1,6 @@
 export class Game {
     //properties 
-    public players: string [] = ['Max', 'Melina', 'Dennis', 'Eva'];
+    public players: string [] = [];
     public stack: string [] = [];
     public playedCards: string [] = [];
     public currentPlayer: number = 0;

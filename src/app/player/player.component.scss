@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     font-size: 20px;
-    background-color: lightgoldenrodyellow;
+    background-color: lightcoral;
     border-radius: 5px;
 
 
@@ -12,8 +12,8 @@
 
 .player-field img {
 
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     border-radius: 100%;
 
@@ -23,6 +23,12 @@
 
     font-size: 30px;
     margin-left: 20px;
+
+}
+
+.playerActive {
+
+    background-color: lightgreen !important;
 
 }
 
