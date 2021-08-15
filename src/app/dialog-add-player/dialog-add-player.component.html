@@ -1,3 +1,4 @@
+<!--material design input field-->
 <h1 mat-dialog-title>Add new Player</h1>
 <div mat-dialog-content>
   <p>Please enter your name</p>
@@ -8,5 +9,5 @@
 </div>
 <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">No Thanks</button>
-  <button mat-button [mat-dialog-close]="" cdkFocusInitial>Ok</button>
+  <button mat-button [mat-dialog-close]="name" cdkFocusInitial>Ok</button>
 </div>
