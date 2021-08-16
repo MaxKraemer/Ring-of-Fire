@@ -14,13 +14,13 @@
     <img *ngFor= "let card of game.playedCards" class="playedCards" src="assets/img/cards/{{ card }}.png">
     
     <!--animated current card-->
-    <img (click)="pickCard()" *ngIf="pickCardAnimation" [class.pick-card]="pickCardAnimation" class="pick-card" style="right: 25px" src="assets/img/cards/{{ currentCard }}.png">
+    <img (click)="pickCard()" *ngIf="game.pickCardAnimation" class="pick-card" style="right: 25px" src="assets/img/cards/{{ game.currentCard }}.png">
     
 </div>
 
 </div>
 
-<app-game-rules [card]="currentCard" class="pin-bottom" ></app-game-rules>
+<app-game-rules [card]="game.currentCard" class="pin-bottom" ></app-game-rules>
 <!--button field materirial design-->
 <button mat-fab color="primary" (click)="openDialog()" class="add-btn">
     <mat-icon>add</mat-icon>

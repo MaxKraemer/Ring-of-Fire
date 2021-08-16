@@ -4,6 +4,8 @@ export class Game {
     public stack: string [] = [];
     public playedCards: string [] = [];
     public currentPlayer: number = 0;
+    public pickCardAnimation = false;
+    public currentCard: any = '';
     
     /**
      * 
@@ -22,6 +24,24 @@ export class Game {
         }
         
         shuffle(this.stack);
+    }
+
+    
+    //function change in to a Json
+    public toJson(){
+      
+      return{
+
+        players: this.players,
+        stack: this.stack,
+        playedCards: this.playedCards,
+        currentPlayer: this.currentPlayer,
+        pickCardAnimation: this.pickCardAnimation,
+        currentCard: this.currentCard
+        
+
+      };
+
     }
 }
 
