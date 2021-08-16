@@ -18,7 +18,6 @@ import { GameRulesComponent } from './game-rules/game-rules.component';
 import { MatCardModule } from '@angular/material/card';
 import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';
-import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
 
 
 
@@ -29,8 +28,7 @@ import { PlayerMobileComponent } from './player-mobile/player-mobile.component';
     GameComponent,
     PlayerComponent,
     DialogAddPlayerComponent,
-    GameRulesComponent,
-    PlayerMobileComponent
+    GameRulesComponent
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
