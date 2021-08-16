@@ -95,10 +95,38 @@
 
 @media (max-width: 800px) {
     
-    .card-stack img {
+    .card-stack  {
 
-        padding-right: 15px;
+        height: 30px;
+        padding-left: 45px;
     }
 
+    .card-stack img{
+
+        width: 120px;
+        padding-right: 50px;
+    }
+
+    .pin-bottom {
+
+        left: 0;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+    }
+
+    .mat-card {
+
+        height: 10px;
+    }
+
+    .add-btn {
+
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+
+   
     
 }
