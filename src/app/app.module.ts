@@ -16,6 +16,8 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { GameRulesComponent } from './game-rules/game-rules.component';
 import { MatCardModule } from '@angular/material/card';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
 
 
 
@@ -29,6 +31,7 @@ import { MatCardModule } from '@angular/material/card';
     GameRulesComponent
   ],
   imports: [
+    AngularFireModule.initializeApp(environment.firebase),
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
