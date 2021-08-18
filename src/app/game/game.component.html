@@ -1,4 +1,4 @@
-<app-player *ngFor="let player of game.players; let i = index;" [ngStyle]="{'top.px' : 30 + (i * 130)}" 
+<app-player *ngFor="let player of game.players; let i = index;" [ngStyle]="{'top.px' : 20 + (i * 75)}" 
 [playerActive] ="i == game.currentPlayer"
  class="player-position" [name] = "player"></app-player>
 

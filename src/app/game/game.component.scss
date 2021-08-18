@@ -16,7 +16,7 @@
     img{
 
         position: absolute;
-        width: 150px;
+        width: 130px;
     }
 }
 
@@ -98,7 +98,7 @@
     .card-stack img {
 
         position: absolute;
-        width: 130px;
+        width: 120px;
     }
 
     .pin-bottom{
@@ -118,8 +118,34 @@
 
     .playedCards{
         right: 25px;
-        transform: scale(1) translateX(157px) translateY(-150px) rotate(-30deg);
+        transform: scale(1) translateX(157px) translateY(-120px) rotate(-32deg);
 
+    }
+
+    @keyframes pick-card-animation {
+
+        0%{
+    
+            transform: scale(1);
+    
+        }
+        20%{
+    
+            transform: scale(1.4);
+    
+        }
+        50%{
+    
+            transform: scale(1.4);
+    
+    
+        }
+        100%{
+    
+            transform: scale(1) translateX(157px) translateY(-120px) rotate(-32deg);
+    
+            
+        }
     }
 
   

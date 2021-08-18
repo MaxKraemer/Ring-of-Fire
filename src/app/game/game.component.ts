@@ -41,7 +41,7 @@ export class GameComponent implements OnInit {
         });
 
     });
-    //connect to database
+    
     
     
   }
